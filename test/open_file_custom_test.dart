@@ -10,6 +10,12 @@ class MockOpenFileCustomPlatform
 
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
+
+  @override
+  Future openFile({required String filePath, required String mimeType}) {
+    // TODO: implement openFile
+    throw UnimplementedError();
+  }
 }
 
 void main() {
